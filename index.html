@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="forma.js"></script>    
+</head>
+<body>
+    
+    <form action="" name="MojaForma" method="POST">
+        <label for="ime">Korisnicko ime</label>
+        <input type="text" id="ime"  >
+        <br><br>
+
+        <label for="lozinka">Lozinka</label>
+        <input type="password" id="lozinka"  >
+        <br><br>
+
+        <label for="mail">Email</label>
+        <input type="email" id="mail"  >
+        <br><br>
+
+        <label for="telefon">Telefon</label>
+        <input type="text" id="telefon" pattern="06[0-9]{1}/[0-9]{6}" placeholder="XXX/XXXXXX" >
+        <br><br>
+
+        <label for="Pol">Pol</label>
+        <input type="radio" name="sex" id="Pol" value="male"  >Muski
+        <input type="radio" name="sex" id="Pol" value="female"  >Zenski
+        <br><br>
+
+        <label for="Uslovi">Uslovi koriscenja:</label>
+        <input type="checkbox" name="conditions" id="Uslovi">Prihvatam uslove koriscenja
+        <br><br>
+
+        <input type="submit" name="posalji" id="posalji" value="posalji" onclick="provera()">
+    </form>
+    
+</body>
+</html>
